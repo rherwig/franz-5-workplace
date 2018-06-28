@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = Franz => {
   const getMessages = () => {
     const $messages = document.querySelector('.uiScrollableAreaContent');
-    const $unreadMessages = $messages.querySelectorAll('._1ht3 ._1ht6');
+    const $unreadMessages = $messages.querySelectorAll('._1ht3');
 
     Franz.setBadge($unreadMessages.length);
   };
