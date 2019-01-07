@@ -7,10 +7,10 @@
     "author": "Rico Herwig <rherwig4711@gmail.com>",
     "license": "MIT",
     "config": {
-        "serviceURL": "https://{teamId}.facebook.com/chat",
+        "serviceURL": "https://{teamId}.workplace.com/chat",
         "hasNotificationSound": true,
         "hasDirectMessages": true,
         "hasTeamId": true,
-        "urlInputSuffix": ".facebook.com"
+        "urlInputSuffix": ".workplace.com"
     }
   }
