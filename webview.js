@@ -2,10 +2,14 @@ const path = require('path');
 
 module.exports = Franz => {
   const getMessages = () => {
-    const $messages = document.querySelector('.uiScrollableAreaContent');
-    const $unreadMessages = $messages.querySelectorAll('._1ht3');
+    const $unreadMessageCounter = document.querySelector('#mercurymessagesCountValue');
+    let unreadMessageCount = 0;
 
-    Franz.setBadge($unreadMessages.length);
+    if ($unreadMessageCounter) {
+      unreadMessageCount = parseInt($unreadMessageCounter.innerText);
+    }
+
+    Franz.setBadge(unreadMessageCount);
   };
 
   Franz.injectCSS(path.join(__dirname, 'workplace.css'));
